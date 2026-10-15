@@ -3,7 +3,7 @@
 A web application for managing shared resources (meeting rooms, labs, equipment, vehicles) and booking them without double-booking.
 
 - ER diagram: https://dbdiagram.io/d/6ad0c8e0064322c8695dd467
-- Demo video: TODO paste your video link
+- Demo video: https://youtu.be/YcPyICdOj8o
 
 ## The problem
 

@@ -28,7 +28,7 @@ Prerequisites: Node.js 20+ and a local PostgreSQL 14+ server.
 1. Install dependencies
 
 ```bash
-   npm install
+npm install
 ```
 
 2. Create an empty database named `reservations` in PostgreSQL.
@@ -38,22 +38,18 @@ Prerequisites: Node.js 20+ and a local PostgreSQL 14+ server.
 4. Create the tables (this also adds the overlap rule):
 
 ```bash
-   npx prisma migrate deploy
+npx prisma migrate deploy
 ```
 
-5. Load sample users and resources (optional):
-
-```bash
-   npx prisma db seed
-```
+5. Load sample users and resources (optional): in pgAdmin's Query Tool (on the `reservations` database), open and run `prisma/seed.sql`. Run it once, on an empty database.
 
 6. Start the app and open http://localhost:3000
 
 ```bash
-   npm run dev
+npm run dev
 ```
 
-If you did not run the seed, add a user in Prisma Studio (`npx prisma studio`) because the booking form needs at least one user.
+If you skip the sample data, add a user in Prisma Studio (`npx prisma studio`), because the booking form needs at least one user.
 
 ## Key design decision: overlap prevention in the database
 
